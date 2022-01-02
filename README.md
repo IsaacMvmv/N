@@ -15,6 +15,12 @@ Nameless pi gaming appstore
 
 -Maybe emulators (retroarch)
 
+-Add stores's games
+
+-Tell another stores I will steal its games
+
+- :D
+
 # My repos:
 
 Old piapps's MC launcher
