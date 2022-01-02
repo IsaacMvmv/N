@@ -17,6 +17,8 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 -Maybe emulators (retroarch)
 
+-Have times to compile/add games & installing/uninstalling scripts
+
 -Add stores's games
 
 -Tell another stores I will steal their games
@@ -26,7 +28,7 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 # TO COMPILE FOR THIS APPSTORE:
 
--Use raspbian armhf & arm64, BOTH architectures, to support both architectures. Why raspbian? Do you know what is glibc? We dont want glibc error, so if we compile with raspbian, its glibc version is the lowest a pi can have (srry :)), so its avoid glibc's errors
+-Use raspbian armhf & arm64, BOTH architectures, to support both architectures. Why raspbian? Do you know what is glibc? We dont want glibc error, so if we compile with raspbian, its glibc version is the lowest a pi can have (srry :)), so it avoids glibc's errors
 
 -I use 2 folders where I have raspbian armhf & arm64 installed, to chroot and compile faster, if u want native, then native.
 
