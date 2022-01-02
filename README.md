@@ -1,6 +1,7 @@
 # N
 
 Nameless pi gaming appstore
+All stuff here will be legal, you will have to include gamefiles, if needed
 
 # TODO:
 -Gui
