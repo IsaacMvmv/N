@@ -19,7 +19,7 @@ Nameless pi gaming appstore
 
 -Tell another stores I will steal their games
 
-- :D
+-Add more repos below
 
 # My repos:
 
