@@ -17,7 +17,7 @@ Nameless pi gaming appstore
 
 -Add stores's games
 
--Tell another stores I will steal its games
+-Tell another stores I will steal their games
 
 - :D
 
