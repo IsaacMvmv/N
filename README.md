@@ -4,10 +4,15 @@ Nameless pi gaming appstore
 
 # TODO:
 -Gui
+
 -Half life
+
 -teeworlds
+
 -hedgewars
+
 -Maybe rayman 2
+
 -Maybe emulators (retroarch)
 
 # My repos:
