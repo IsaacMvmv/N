@@ -25,14 +25,18 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 
 # TO COMPILE FOR THIS APPSTORE:
+
 -Use raspbian armhf & arm64, BOTH architectures, to support both architectures. Why raspbian? Do you know what is glibc? We dont want glibc error, so if we compile with raspbian, its glibc version is the lowest a pi can have (srry :)), so its avoid glibc's errors
 
 -I use 2 folders where I have raspbian armhf & arm64 installed, to chroot and compile faster, if u want native, then native.
 
 # TO MAKE INSTALL SCRIPTS FOR THE APPSTORE:
 -Add support to:
+
 . arm64
+
 - armhf
+
 - ARCHLINUX (srry guys, you'll have to search for archlinux deps, because I use archlinux, and I dont like to be excluded from appstores)
 
 # My repos:
