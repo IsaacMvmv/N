@@ -64,3 +64,9 @@ Lunar client: https://github.com/gl91306/lunar
 Deltarune for pi (I think only armhf): https://github.com/gl91306/deltarune
 
 Another MC launcher: https://github.com/gl91306/launcherpi
+
+
+
+# ALSO
+
+If you want to contribute, join https://discord.gg/7qRNPPwf5n
