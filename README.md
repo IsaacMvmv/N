@@ -31,13 +31,13 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 -I use 2 folders where I have raspbian armhf & arm64 installed, to chroot and compile faster, if u want native, then native.
 
 # TO MAKE INSTALL SCRIPTS FOR THE APPSTORE:
--Add support to:
+Add support to:
 
-. arm64
+-arm64
 
-- armhf
+-armhf
 
-- ARCHLINUX (srry guys, you'll have to search for archlinux deps, because I use archlinux, and I dont like to be excluded from appstores)
+-ARCHLINUX (srry guys, you'll have to search for archlinux deps, because I use archlinux, and I dont like to be excluded from appstores)
 
 # My repos:
 
