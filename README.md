@@ -17,7 +17,7 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 -Maybe emulators (retroarch)
 
--Have times to compile/add games & installing/uninstalling scripts
+-Have timeto compile/add games & installing/uninstalling scripts
 
 -Add stores's games
 
