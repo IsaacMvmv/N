@@ -30,6 +30,9 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 -Use raspbian armhf & arm64, BOTH architectures, to support both architectures. Why raspbian? Do you know what is glibc? We dont want glibc error, so if we compile with raspbian, its glibc version is the lowest a pi can have (srry :)), so it avoids glibc's errors
 
+Rpi Os lite arm64 link:  https://downloads.raspberrypi.org/raspios_lite_arm64/images/
+
+
 -I use 2 folders where I have raspbian armhf & arm64 installed, to chroot and compile faster, if u want native, then native.
 
 # TO MAKE INSTALL SCRIPTS FOR THE APPSTORE:
