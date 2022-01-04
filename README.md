@@ -17,6 +17,10 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 -Maybe emulators (retroarch)
 
+-Stuntrally
+
+-SuperTuxKart
+
 -Have timeto compile/add games & installing/uninstalling scripts
 
 -Add stores's games
