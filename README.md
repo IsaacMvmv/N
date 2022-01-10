@@ -13,7 +13,7 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 -hedgewars
 
--Maybe rayman 2
+-Maybe rayman 2                                                  (Compilation HUGE errors)
 
 -Maybe emulators (retroarch)
 
