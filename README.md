@@ -7,8 +7,6 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 # TODO:
 -Gui
 
--Half life
-
 -teeworlds
 
 -hedgewars
