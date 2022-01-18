@@ -19,7 +19,7 @@ All stuff here will be legal, you will have to include gamefiles, if needed
 
 -SuperTuxKart
 
--Have timeto compile/add games & installing/uninstalling scripts
+-Have time to compile/add games & installing/uninstalling scripts
 
 -Add stores's games
 
