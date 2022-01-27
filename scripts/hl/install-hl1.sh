@@ -315,7 +315,7 @@ cd ~/.xash3d
 
 Lang=$(echo $LANG | grep es)
 
-if [ $(Lang) = "" ];then
+if [ $Lang = "" ];then
 	wget https://github.com/IsaacMvmv/N/releases/download/hl/valve.zip
 	unzip valve.zip
 	rm valve.zip
