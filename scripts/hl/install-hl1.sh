@@ -330,6 +330,7 @@ cd ~/.games/hl
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.jpeg
 
+mkdir -pv ~/.local/share/applications/
 
 echo "[Desktop Entry]
 Type=Application
