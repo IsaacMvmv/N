@@ -22,10 +22,16 @@ cp res/bin/dhewm3 ~/.games/doom3
 cp res/lib/dhewm3/* ~/.games/doom3
 
 sudo rm /bin/doom3
-sudo ln ~/.games/doom3/dhewm3 /bin/doom3
 
-mkdir -p ~/.local/share/dhewm3/base
-cd ~/.local/share/dhewm3/base
+echo "cd $HOME/.games/doom3
+./dhewm3
+cd $OLDPWD" > doom3
+chmod +x doom3
+sudo mv doom3 /bin/doom3
+
+cd ~/.games/doom3
+mkdir base
+cd base
 wget https://github.com/IsaacMvmv/N/releases/download/doom/doom3.zip
 unzip doom3.zip
 rm doom3.zip
