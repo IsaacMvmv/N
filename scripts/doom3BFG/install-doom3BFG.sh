@@ -41,7 +41,7 @@ sudo ln ~/.games/doom3BFG/RBDoom3BFG /bin/doom3BFG
 rm -rf ~/.games/doom3BFG/base
 mkdir -p ~/.games/doom3BFG/base
 cd ~/.games/doom3BFG
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu" -O base.rar && rm -rf /tmp/cookies.txt -O base.rar
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu" -O base.rar && rm -rf /tmp/cookies.txt
 unrar x base.rar
 rm base.rar
 
