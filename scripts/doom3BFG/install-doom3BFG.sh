@@ -37,7 +37,7 @@ make -j$(nproc)
 mkdir -pv ~/.games/doom3BFG
 cp ~/.tmp/RBDOOM-3-BFG/neo/build/RBDoom3BFG ~/.games/doom3BFG
 sudo rm /bin/doom3BFG
-sudo ln ~/.games/doom3BFG/RBDOOM-3-BFG /bin/doom3BFG
+sudo ln ~/.games/doom3BFG/RBDoom3BFG /bin/doom3BFG
 rm -rf ~/.games/doom3BFG/base
 mkdir -p ~/.games/doom3BFG/base
 cd ~/.games/doom3BFG
