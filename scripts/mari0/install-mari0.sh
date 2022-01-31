@@ -30,9 +30,9 @@ mkdir -pv ~/.games/mari0
 cp res/bin/love ~/.games/mari0
 cp res/lib/* ~/.games/mari0
 
-sudo echo "#!/bin/sh
+echo "#!/bin/sh
 cd $HOME/.games/mari0
-./love Mari0_Community_Edition_v1.6.love
+LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH ./love Mari0_Community_Edition_v1.6.love
 cd" > mari0
 
 chmod +x mari0
