@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -f /bin/apt ];then
-	apt install -y git ninja gcc g++ meson python3 libxnvctrl-dev libdbus-1-dev libx11-dev libdrm-dev mesa-common-dev
+	sudo apt install -y git ninja gcc g++ meson python3 libxnvctrl-dev libdbus-1-dev libx11-dev libdrm-dev mesa-common-dev
 	python3 -m pip install mako
 
 elif [ -f /bin/pacman ];then
