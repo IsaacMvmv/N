@@ -10,7 +10,7 @@ fi
 
 
 
-rm -rf ~/.tmp ~/.games/reVC
+rm -rf ~/.tmp
 mkdir ~/.tmp
 cd ~/.tmp
 
