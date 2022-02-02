@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [ -f /bin/apt ];then
-	sudo apt -y install sdl2-image sdl2-mixer sdl2-ttf libfontconfig-dev qt5-default automake mercurial libtool libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile-dev libudev-dev libtiff5-dev libwebp-dev libasound2-dev libaudio-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxss-dev libesd0-dev freeglut3-dev libmodplug-dev libsmpeg-dev libjpeg-dev libogg-dev libvorbis-dev libvorbisfile3 libcurl4 cmake aria2 lolcat figlet
+	sudo apt -y install sdl2-image sdl2-mixer sdl2-ttf libfontconfig-dev qt5-default automake mercurial libtool libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile-dev libudev-dev libtiff5-dev libwebp-dev libasound2-dev libaudio-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxss-dev libesd0-dev freeglut3-dev libmodplug-dev libsmpeg-dev libjpeg-dev libogg-dev libvorbis-dev libvorbisfile3 libcurl4 cmake aria2
 elif [ -f /bin/pacman ];then
-	sudo pacman -S  --needed sdl2_image sdl2_ttf sdl2_mixer fontconfig qt5-base automake mercurial libtool freeimage openal pango libsndfile libtiff xorg-xrandr libxinerama libxss freeglut libjpeg-turbo libogg libvorbis cmake lolcat 
+	sudo pacman -S  --needed sdl2_image sdl2_ttf sdl2_mixer fontconfig qt5-base automake mercurial libtool freeimage openal pango libsndfile libtiff xorg-xrandr libxinerama libxss freeglut libjpeg-turbo libogg libvorbis cmake 
 fi
 
 rm -rf ~/.tmp ~/.games/doom3 rm -rf ~/.local/share/dhewm3/
