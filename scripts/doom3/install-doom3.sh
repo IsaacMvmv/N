@@ -43,6 +43,8 @@ cd ~/.games/doom3
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3.jpeg
 
+mkdir -p ~/.local/share/applications
+
 
 echo "[Desktop Entry]
 Type=Application
