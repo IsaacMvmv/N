@@ -2,50 +2,15 @@
 
 Nameless pi gaming appstore
 
-All stuff here will be legal, you will have to include gamefiles, if needed
 
-# TODO:
--Gui
+# Why do scripts compile instead of downloading a precompiled package:
 
--teeworlds
+  Because Im lazy? No (But I am, no doubt)
 
--hedgewars
-
--Maybe rayman 2                                                  (Compilation HUGE errors)
-
--Maybe emulators (retroarch)
-
--Stuntrally
-
--SuperTuxKart
-
--Have time to compile/add games & installing/uninstalling scripts
-
--Add stores's games
-
--Tell another stores I will steal their games
-
--Add more repos below
-
-
-# TO COMPILE FOR THIS APPSTORE:
-
--Use raspbian armhf & arm64, BOTH architectures, to support both architectures. Why raspbian? Do you know what is glibc? We dont want glibc error, so if we compile with raspbian, its glibc version is the lowest a pi can have (srry :)), so it avoids glibc's errors
-
-Rpi Os lite arm64 link:  https://downloads.raspberrypi.org/raspios_lite_arm64/images/
-
-
--I use 2 folders where I have raspbian armhf & arm64 installed, to chroot and compile faster, if u want native, then native.
-
-# TO MAKE INSTALL SCRIPTS FOR THE APPSTORE:
-Add support to:
-
--arm64
-
--armhf
-
--ARCHLINUX (srry guys, you'll have to search for archlinux deps, because I use archlinux, and I dont like to be excluded from appstores)
-
+  If you compile, your resoult is a BIT faster (More performance) than prebuilt ones, making the game go at ~1-10fps more. And if we want pi to run doom3 nice, I will make it able to to it. :D
+  
+  
+  
 # My repos:
 
 Old piapps's MC launcher
