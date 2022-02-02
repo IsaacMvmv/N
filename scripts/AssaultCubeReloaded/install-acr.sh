@@ -33,6 +33,7 @@ cd ~/.games/doom3BFG
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.jpeg
 
+mkdir -p ~/.local/share/applications
 
 echo "[Desktop Entry]
 Type=Application
