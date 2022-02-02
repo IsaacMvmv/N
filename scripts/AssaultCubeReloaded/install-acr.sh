@@ -29,7 +29,7 @@ sudo mv acr /bin/acr
 
 rm -rf ~/.tmp
 
-cd ~/.games/doom3BFG
+cd ~/.games/acr
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.jpeg
 
