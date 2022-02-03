@@ -30,6 +30,9 @@ Give it execution perms and... move it. After that make app shortcut. finally, r
 
 This can be better understood while looking to doom3 install script, because its the cleanest script here, and the less modified:
 
+
+
+
 Doom3's step 1
 ```
 if [ -f /bin/apt ];then
