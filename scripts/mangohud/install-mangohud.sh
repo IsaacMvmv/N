@@ -22,12 +22,10 @@ ninja -C build install
 
 sudo rm -rf /bin/mangohud /lib/libMangoHud.so /lib/libMangoHud_dlsym.so
 
-sudo cp bin/mangohud /bin
-sudo cp lib/mangohud/* /lib
+sudo cp res/bin/mangohud /bin
+sudo cp res/lib/mangohud/* /lib
 
 rm -rf ~/.tmp
-
-
 
 
 echo For vulkan games use \"mangohud\ \%game\%\" and for opengl games use \"mangohud --dlsym \%game\%\"
