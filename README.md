@@ -31,7 +31,7 @@ https://github.com/IsaacMvmv/Mari0_rpi
 
 Lunar client: https://github.com/gl91306/lunar
 
-Deltarune for pi (I think only armhf): https://github.com/gl91306/deltarune
+Deltarune for pi (I think only armhf): https://github.com/gl91306/deltarune_ch_1_2
 
 Another MC launcher: https://github.com/gl91306/launcherpi
 
