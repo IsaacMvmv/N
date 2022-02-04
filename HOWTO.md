@@ -3,14 +3,14 @@
 
 ## 1. Deps
 
-You will have to include ALL the deps in the script, for apt, or for pacman. You can use https://pkgs.org/ to search for specific dependencies in another distros.
+You will have to include ALL the deps in the script, for apt, or for pacman. You can use https://pkgs.org/ to search for specific dependencies in other distros.
 Currently only apt and pacman are supported.
 
 ## 2. Cloning and compiling
 
-All scripts create a temp directory, to avoid messing home directory, so when its created, clone the repo, and, usually open source games/engines will be prebuilt using cmake or configure.
+All scripts create a .temp directory, to avoid messing with the home directory, so when its created, clone the repo, and, usually open source games/engines will be prebuilt using cmake or configure.
 
-If using cmake, you will have to add ```-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=res``` to its options. They will reduce resoult size, performance and it will install the compilation in "res" folder. useful for "packaging" the app in a folder
+If using cmake, you will have to add ```-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=res``` to its options. They will reduce result size, performance and it will install the compilation in "res" folder. useful for "packaging" the app in a folder
 
 If using configure, you will have to add ```--prefix=$PWD/res``` to its options. It will install the compilation in the "res" folder inside current dir. Useful for "packaging" later.
 
