@@ -63,7 +63,7 @@ cd
 echo "#!/bin/sh
 cd $HOME/.games/reVC
 ./reVC
-cd $OLDPWD" > reVC
+cd \$OLDPWD" > reVC
 chmod +x reVC
 sudo mv reVC /bin
 
