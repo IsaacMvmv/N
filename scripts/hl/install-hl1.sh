@@ -21,7 +21,7 @@ if [ -f /bin/apt ];then
 	sudo apt install -y python libsdl2-2.0-0 libsdl2-dev $COMPILERS libfreetype6-dev
 elif [ -f /bin/pacman ];then
 	if [ $(uname -m) == "x86_64" ]; then
-  COMPILERS="gcc lib32-gcc"
+  COMPILERS="gcc lib32-gcc-libs"
 	else
 		COMPILERS="gcc"
 	fi
