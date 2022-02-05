@@ -3,7 +3,7 @@
 
 
 if [ -f /bin/apt ];then
-	sudo apt install -y gcc g++ make git libluajit-5.1-2 libluajit-5.1-dev sdl2 libopenal1 libopenal-dev libsdl2-dev libsdl2 libfreetype6 libfreetype6-dev libmpg123-0 libvorbis-dev libmpg123-dev
+	sudo apt install -y gcc g++ make git libluajit-5.1-2 libluajit-5.1-dev libsdl2-2.0-0 libopenal1 libopenal-dev libsdl2-dev libfreetype6 libfreetype6-dev libmpg123-0 libvorbis-dev libmpg123-dev
 elif [ -f /bin/pacman ];then
 	sudo pacman -S --needed gcc make git luajit sdl2 openal freetype2 mpg123 libvorbis
 fi
