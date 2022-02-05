@@ -58,7 +58,7 @@ cd
 echo "#!/bin/sh
 cd $HOME/.games/re3
 ./re3
-cd $OLDPWD" > re3
+cd \$OLDPWD" > re3
 chmod +x re3
 sudo mv re3 /bin
 
