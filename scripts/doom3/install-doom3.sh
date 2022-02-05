@@ -25,7 +25,7 @@ sudo rm /bin/doom3
 
 echo "cd $HOME/.games/doom3
 ./dhewm3
-cd $OLDPWD" > doom3
+cd \$OLDPWD" > doom3
 chmod +x doom3
 sudo mv doom3 /bin/doom3
 
