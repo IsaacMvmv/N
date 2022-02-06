@@ -91,12 +91,12 @@ wget https://github.com/IsaacMvmv/N/releases/download/doom/doom2.wad
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
 ./crispy-doom -iwad doom1.wad
-cd $OLDPWD' > doom1
+cd \$OLDPWD' > doom1
 
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
 ./crispy-doom -iwad doom2.wad
-cd $OLDPWD' > doom2
+cd \$OLDPWD' > doom2
 
 chmod +x doom1 doom2
 sudo rm /bin/doom1 /bin/doom2
@@ -131,7 +131,5 @@ Icon=/home/$USER/.games/doom1_2/doom12.jpeg
 Terminal=false
 Categories=Games;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.desktop
-
-echo "Launch game by typing doom3BFG Or using desktop shortcut"
 
 echo Type "doom1, doom2 to run each game"
