@@ -4,7 +4,7 @@
 if [ -f /bin/apt ];then
 	sudo apt install -y g++ make cmake libsdl2-dev git zlib1g-dev libbz2-dev libjpeg-dev libfluidsynth-dev libgme-dev libopenal-dev libmpg123-dev libsndfile1-dev libgtk-3-dev timidity nasm libgl1-mesa-dev tar libsdl1.2-dev libglew-dev
 elif [ -f /bin/pacman ];then
-	sudo pacman -S --needed gcc make cmake sdl2 sdl_mixer git zlib bzip2 libjpeg-turbo fluidsynth libgme openal mpg123 libsndfile gtk3 timidity++ nasm glu tar sdl glew
+	sudo pacman -S --needed gcc make cmake sdl2 sdl_mixer sdl_net git zlib bzip2 libjpeg-turbo fluidsynth libgme openal mpg123 libsndfile gtk3 timidity++ nasm glu tar sdl glew
 fi
 
 rm -rf ~/.tmp ~/.games/doom1_2
