@@ -17,7 +17,7 @@ cd ~/.tmp
 git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git
 cd MangoHud
 
-meson build --prefix=/home/$USER/.tmp/MangoHud/res
+meson build --prefix=/home/$USER/.tmp/MangoHud/res -Dwith_xnvctrl=disabled
 ninja -C build install
 
 sudo rm -rf /bin/mangohud /lib/libMangoHud.so /lib/libMangoHud_dlsym.so
