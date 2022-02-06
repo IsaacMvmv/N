@@ -4,7 +4,7 @@ if [ -f /bin/apt ];then
 	sudo apt install -y git ninja gcc g++ meson python3 libxnvctrl-dev libdbus-1-dev libx11-dev libdrm-dev mesa-common-dev glslang-dev glslang-tools
 	python3 -m pip install mako
 elif [ -f /bin/pacman ];then
-	sudo pacman -S --needed git ninja gcc meson python-mako libxnvctrl dbus libdrm glslang
+	sudo pacman -S --needed git ninja gcc meson python-mako dbus libdrm glslang
 fi
 
 
