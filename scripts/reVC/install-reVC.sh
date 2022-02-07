@@ -83,7 +83,7 @@ Comment=reVC
 Exec=/bin/reVC
 Icon=/home/$USER/.games/reVC/reVC.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/reVC.desktop
+Categories=Game;" > ~/.local/share/applications/reVC.desktop
 chmod +x ~/.local/share/applications/reVC.desktop
 
 echo "Launch game by typing reVC Or using desktop shortcut"
