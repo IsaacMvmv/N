@@ -45,7 +45,7 @@ Comment=Unofficial port
 Exec=/bin/sm64
 Icon=/home/$USER/.games/sm64/sm64.png
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/Sm64.desktop
+Categories=Game;" > ~/.local/share/applications/Sm64.desktop
 chmod +x ~/.local/share/applications/Sm64.desktop
 
 
