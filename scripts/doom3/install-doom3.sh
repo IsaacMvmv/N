@@ -54,7 +54,7 @@ Comment=Doom 3 engine
 Exec=/bin/doom3
 Icon=/home/$USER/.games/doom3/doom3.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/Doom3.desktop
+Categories=Game;" > ~/.local/share/applications/Doom3.desktop
 chmod +x ~/.local/share/applications/Doom3.desktop
 
 
