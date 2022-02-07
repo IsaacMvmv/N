@@ -59,7 +59,7 @@ Comment=Awesome portals game :D
 Exec=/bin/mari0
 Icon=/home/$USER/.games/mari0/mari0.jpg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/Mari0.desktop
+Categories=Game;" > ~/.local/share/applications/Mari0.desktop
 chmod +x ~/.local/share/applications/Mari0.desktop
 
 
