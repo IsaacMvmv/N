@@ -118,7 +118,7 @@ Comment=Doom1 and 2 Engine
 Exec=/bin/doom1
 Icon=/home/$USER/.games/doom1_2/doom12.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/Doom1.desktop
+Categories=Game;" > ~/.local/share/applications/Doom1.desktop
 chmod +x ~/.local/share/applications/Doom1.desktop
 
 echo "[Desktop Entry]
