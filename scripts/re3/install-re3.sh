@@ -75,7 +75,7 @@ Comment=re3
 Exec=/bin/re3
 Icon=/home/$USER/.games/re3/re3.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/re3.desktop
+Categories=Game;" > ~/.local/share/applications/re3.desktop
 chmod +x ~/.local/share/applications/re3.desktop
 
 echo "Launch game by typing re3 Or using desktop shortcut"
