@@ -129,7 +129,7 @@ Comment=Doom1 and 2 Engine
 Exec=/bin/doom2
 Icon=/home/$USER/.games/doom1_2/doom12.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/Doom2.desktop
+Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.desktop
 
 echo Type "doom1, doom2 to run each game"
