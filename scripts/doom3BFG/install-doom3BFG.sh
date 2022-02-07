@@ -58,7 +58,7 @@ Comment=Doom3BFG Engine
 Exec=/bin/doom3BFG
 Icon=/home/$USER/.games/doom3BFG/doom3BFG.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/Doom3BFG.desktop
+Categories=Game;" > ~/.local/share/applications/Doom3BFG.desktop
 chmod +x ~/.local/share/applications/Doom3BFG.desktop
 
 echo "Launch game by typing doom3BFG Or using desktop shortcut"
