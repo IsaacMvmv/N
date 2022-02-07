@@ -340,7 +340,7 @@ Comment=Xash3d engine and hlsdk .so files
 Exec=/bin/hl
 Icon=/home/$USER/.games/hl/hl.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/HalfLife.desktop
+Categories=Game;" > ~/.local/share/applications/HalfLife.desktop
 chmod +x ~/.local/share/applications/HalfLife.desktop
 
 
