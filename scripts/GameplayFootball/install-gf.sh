@@ -54,7 +54,7 @@ Comment=Football open source game
 Exec=/bin/gf
 Icon=/home/$USER/.games/gf/gf.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/GameplayFootball.desktop
+Categories=Game;" > ~/.local/share/applications/GameplayFootball.desktop
 chmod +x ~/.local/share/applications/GameplayFootball.desktop
 
 
