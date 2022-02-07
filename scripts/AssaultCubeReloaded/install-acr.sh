@@ -43,7 +43,7 @@ Comment=Shooter game
 Exec=/bin/acr
 Icon=/home/$USER/.games/acr/acr.jpeg
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/AssaultCubeReloaded.desktop
+Categories=Game;" > ~/.local/share/applications/AssaultCubeReloaded.desktop
 chmod +x ~/.local/share/applications/AssaultCubeReloaded.desktop
 
 echo "Launch game by typing acr Or using desktop shortcut"
