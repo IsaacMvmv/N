@@ -49,5 +49,5 @@ Comment=CDogs Game
 Exec=/bin/cdogs-sdl
 Icon=/home/$USER/.games/cdogs-sdl/cdogs-sdl.png
 Terminal=false
-Categories=Games;" > ~/.local/share/applications/CDogs.desktop
+Categories=Game;" > ~/.local/share/applications/CDogs.desktop
 chmod +x ~/.local/share/applications/CDogs.desktop
