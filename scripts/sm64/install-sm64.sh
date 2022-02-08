@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -f /usr/bin/apt ];then
-	sudo apt install -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev libxinerama-dev libxss-dev libesd0-dev freeglut3-dev libmodplug-dev libsmpeg-dev libjpeg-dev libogg-dev libvorbis-dev libvorbisfile3 libcurl4 cmake aria2
+	sudo apt install -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev
 elif [ -f /usr/bin/pacman ];then
 	sudo pacman -S  --needed base-devel python sdl2 glew
 fi
