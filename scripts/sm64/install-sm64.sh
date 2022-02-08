@@ -1,8 +1,8 @@
 #!/bin/sh
 
-if [ -f /bin/apt ];then
+if [ -f /usr/bin/apt ];then
 	sudo apt -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev libxinerama-dev libxss-dev libesd0-dev freeglut3-dev libmodplug-dev libsmpeg-dev libjpeg-dev libogg-dev libvorbis-dev libvorbisfile3 libcurl4 cmake aria2
-elif [ -f /bin/pacman ];then
+elif [ -f /usr/bin/pacman ];then
 	sudo pacman -S  --needed base-devel python sdl2 glew
 fi
 
