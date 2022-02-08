@@ -1,9 +1,9 @@
 #!/bin/sh
 
 
-if [ -f /bin/apt ];then
+if [ -f /usr/bin/apt ];then
 	sudo apt-get install git cmake build-essential libgl1-mesa-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-gfx-dev libopenal-dev libboost-all-dev libdirectfb-dev libst-dev mesa-utils xvfb x11vnc libsqlite3-dev
-elif [ -f /bin/pacman ];then
+elif [ -f /usr/bin/pacman ];then
 	sudo pacman -S --needed git cmake gcc sdl2 sdl2_image sdl2_ttf sdl2_gfx openal boost
 fi
 
