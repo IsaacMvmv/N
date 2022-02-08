@@ -1,8 +1,8 @@
 #!/bin/sh
 
-if [ -f /bin/apt ];then
+if [ -f /usr/bin/apt ];then
     sudo apt -y install cmake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libgtk-3-dev build-essential python3 git
-elif [ -f /bin/pacman ];then
+elif [ -f /usr/bin/pacman ];then
     sudo pacman -S --needed cmake sdl2 sdl2_image sdl2_mixer gtk3 make python git
 fi
 
