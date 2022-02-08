@@ -9,17 +9,14 @@ cd ~/.tmp
 
 
 
-echo Instalando dependencias...
-
-
-if [ -f /bin/apt ];then
+if [ -f /usr/bin/apt ];then
 	if [ $(uname -m) == "x86_64" ]; then
   COMPILERS="gcc-multilib g++-multilib"
 	else
 		COMPILERS="gcc g++"
 	fi
 	sudo apt install -y python libsdl2-2.0-0 libsdl2-dev $COMPILERS libfreetype6-dev
-elif [ -f /bin/pacman ];then
+elif [ -f /usr/bin/pacman ];then
 	if [ $(uname -m) == "x86_64" ]; then
   COMPILERS="gcc lib32-gcc-libs"
 	else
