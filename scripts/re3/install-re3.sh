@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -f /bin/apt ];then
+if [ -f /usr/bin/apt ];then
 	apt-get install git cmake premake libopenal unzip libopenal-dev libglew-dev libglfw3 libglfw3-dev libsndfile1 libsndfile1-dev libmpg123 libmpg123-dev 
 
 	mkdir .tmp
@@ -18,7 +18,7 @@ if [ -f /bin/apt ];then
 	cd ../..
 	rm -rf .tmp
 
-elif [ -f /bin/pacman ];then
+elif [ -f /usr/bin/pacman ];then
 	sudo pacman -S --needed git premake cmake openal glew libsndfile mpg123 glfw-x11
 fi
 
