@@ -35,11 +35,11 @@ cd build
 
 Arch=$(uname -m)
 if [ "$Arch" = x86_64 ];then
-	make -j$(nproc) config=release_linux-amd64-librw_gl3_glfw-oal
+	make config=release_linux-amd64-librw_gl3_glfw-oal
 elif [ "$Arch" = armv7l ];then
-	make -j$(nproc) config=release_linux-arm-librw_gl3_glfw-oal
+	make config=release_linux-arm-librw_gl3_glfw-oal
 elif [ "$Arch" = aarch64 ];then
-	make -j$(nproc) config=release_linux-arm64-librw_gl3_glfw-oal
+	make config=release_linux-arm64-librw_gl3_glfw-oal
 else
 	echo "Cannot detect architecture. Tell devs, this isnt soppused to happen."
 	exit 1
@@ -48,7 +48,7 @@ fi
 mkdir -pv ~/.games/re3
 mv ../bin/linux-amd64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 
-cd ~/.games/reVC
+cd ~/.games/re3
 wget https://github.com/IsaacMvmv/N/releases/download/reVC/re3.zip
 unzip re3.zip
 rm re3.zip
