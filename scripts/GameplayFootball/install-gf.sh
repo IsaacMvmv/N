@@ -32,8 +32,7 @@ mv res ~/.games/gf
 
 echo '#!/bin/sh
 cd /home/$USER/.games/gf
-./gameplayfootball
-cd $OLDPWD' > gf
+./gameplayfootball' > gf
 chmod +x gf
 sudo mv gf /bin/
 
