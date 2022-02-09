@@ -24,24 +24,18 @@ cp res/lib/dhewm3/* ~/.games/doom3
 sudo rm /bin/doom3
 
 echo "cd $HOME/.games/doom3
-./dhewm3
-cd \$OLDPWD" > doom3
+./dhewm3" > doom3
 chmod +x doom3
 sudo mv doom3 /bin/doom3
 
-cd ~/.games/doom3
-mkdir base
-cd base
-wget https://github.com/IsaacMvmv/N/releases/download/doom/doom3.zip
-unzip doom3.zip
-rm doom3.zip
+cd
 
 rm -rf ~/.tmp
 
 
 cd ~/.games/doom3
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3.png
 
 mkdir -p ~/.local/share/applications
 
@@ -52,10 +46,11 @@ Version=1.0
 Name=Doom 3
 Comment=Doom 3 engine
 Exec=/bin/doom3
-Icon=/home/$USER/.games/doom3/doom3.jpeg
+Icon=/home/$USER/.games/doom3/doom3.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom3.desktop
 chmod +x ~/.local/share/applications/Doom3.desktop
 
 
-echo "Lunch game by typing doom3 ;D"
+echo "You have to have base dir of original doom3 placed in ~/.games/doom3/base  to play"
+echo "Launch game by typing doom3 or clicking app shortcut"

@@ -43,7 +43,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/gf
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/gf.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/gf.png
 
 
 echo "[Desktop Entry]
@@ -52,7 +52,7 @@ Version=1.0
 Name=GameplayFootball
 Comment=Football open source game
 Exec=/bin/gf
-Icon=/home/$USER/.games/gf/gf.jpeg
+Icon=/home/$USER/.games/gf/gf.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/GameplayFootball.desktop
 chmod +x ~/.local/share/applications/GameplayFootball.desktop

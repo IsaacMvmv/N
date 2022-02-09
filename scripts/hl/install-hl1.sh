@@ -308,24 +308,9 @@ chmod +x xash3d
 sudo mv xash3d /bin/hl
 
 
-cd ~/.xash3d
-
-Lang=$(echo $LANG | grep es)
-
-if [ $Lang = "" ];then
-	wget https://github.com/IsaacMvmv/N/releases/download/hl/valve.zip
-	unzip valve.zip
-	rm valve.zip
-else
-	wget https://github.com/IsaacMvmv/N/releases/download/hl/valve_spanish.zip
-	unzip valve_spanish.zip
-	rm valve_spanish.zip
-fi
-
-
 cd ~/.games/hl
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.png
 
 mkdir -pv ~/.local/share/applications/
 
@@ -335,10 +320,11 @@ Version=1.0
 Name=Half life
 Comment=Xash3d engine and hlsdk .so files
 Exec=/bin/hl
-Icon=/home/$USER/.games/hl/hl.jpeg
+Icon=/home/$USER/.games/hl/hl.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/HalfLife.desktop
 chmod +x ~/.local/share/applications/HalfLife.desktop
 
 
-echo READY, launch game by typing hl or use app icon
+echo "You have to have valve dir of original half life game placed in $HOME/.xash3d/valve to play"
+echo "Launch game by typing hl or use app icon"

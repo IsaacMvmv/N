@@ -36,36 +36,35 @@ cd build
 Arch=$(uname -m)
 if [ "$Arch" = x86_64 ];then
 	make config=release_linux-amd64-librw_gl3_glfw-oal
+	mkdir -pv ~/.games/re3
+	mv ../bin/linux-amd64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 elif [ "$Arch" = armv7l ];then
 	make config=release_linux-arm-librw_gl3_glfw-oal
+	mkdir -pv ~/.games/re3
+	mv ../bin/linux-arm-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 elif [ "$Arch" = aarch64 ];then
 	make config=release_linux-arm64-librw_gl3_glfw-oal
+	mkdir -pv ~/.games/re3
+	mv ../bin/linux-arm64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 else
 	echo "Cannot detect architecture. Tell devs, this isnt soppused to happen."
 	exit 1
 fi
 
-mkdir -pv ~/.games/re3
-mv ../bin/linux-amd64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
-
-cd ~/.games/re3
-wget https://github.com/IsaacMvmv/N/releases/download/reVC/re3.zip
-unzip re3.zip
-rm re3.zip
 
 cd
 
 echo "#!/bin/sh
 cd $HOME/.games/re3
-./re3
-cd \$OLDPWD" > re3
+./re3" > re3
 chmod +x re3
 sudo mv re3 /bin
 
 cd ~/.games/re3
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/reVC.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/re3.png
 
+mkdir -p ~/.local/share/applications
 
 echo "[Desktop Entry]
 Type=Application
@@ -73,9 +72,10 @@ Version=1.0
 Name=Gta 3
 Comment=re3
 Exec=/bin/re3
-Icon=/home/$USER/.games/re3/re3.jpeg
+Icon=/home/$USER/.games/re3/re3.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/re3.desktop
 chmod +x ~/.local/share/applications/re3.desktop
 
+echo "You have to have original gamefiles placed in $HOME/.games/re3"
 echo "Launch game by typing re3 Or using desktop shortcut"

@@ -31,7 +31,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/acr
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.png
 
 mkdir -p ~/.local/share/applications
 
@@ -41,7 +41,7 @@ Version=1.0
 Name=Assault Cube Reloaded
 Comment=Shooter game
 Exec=/bin/acr
-Icon=/home/$USER/.games/acr/acr.jpeg
+Icon=/home/$USER/.games/acr/acr.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/AssaultCubeReloaded.desktop
 chmod +x ~/.local/share/applications/AssaultCubeReloaded.desktop

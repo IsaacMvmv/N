@@ -84,19 +84,15 @@ mkdir -pv ~/.games/doom1_2
 
 mv ~/.tmp/crispy-doom/res/bin/crispy-doom ~/.games/doom1_2
 
-cd ~/.games/doom1_2
-wget https://github.com/IsaacMvmv/N/releases/download/doom/doom1.wad
-wget https://github.com/IsaacMvmv/N/releases/download/doom/doom2.wad
+cd
 
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
-./crispy-doom -iwad doom1.wad
-cd \$OLDPWD' > doom1
+./crispy-doom -iwad doom1.wad' > doom1
 
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
-./crispy-doom -iwad doom2.wad
-cd \$OLDPWD' > doom2
+./crispy-doom -iwad doom2.wad' > doom2
 
 chmod +x doom1 doom2
 sudo rm /bin/doom1 /bin/doom2
@@ -107,8 +103,8 @@ rm -rf ~/.tmp
 
 cd ~/.games/doom12
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom12.jpeg
-
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom1.png
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom2.png
 
 echo "[Desktop Entry]
 Type=Application
@@ -116,7 +112,7 @@ Version=1.0
 Name=doom1
 Comment=Doom1 and 2 Engine
 Exec=/bin/doom1
-Icon=/home/$USER/.games/doom1_2/doom12.jpeg
+Icon=/home/$USER/.games/doom1_2/doom1.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom1.desktop
 chmod +x ~/.local/share/applications/Doom1.desktop
@@ -127,9 +123,10 @@ Version=1.0
 Name=doom2
 Comment=Doom1 and 2 Engine
 Exec=/bin/doom2
-Icon=/home/$USER/.games/doom1_2/doom12.jpeg
+Icon=/home/$USER/.games/doom1_2/doom2.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.desktop
 
-echo Type "doom1, doom2 to run each game"
+echo "You have to have original doom1.wad and doom2.wad files placed in /home/$USER/.games/doom1_2. Then you will be able to play"
+echo "Open game by typing doom1, doom2 or clicking app shortcut"
