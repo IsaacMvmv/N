@@ -46,5 +46,3 @@ Categories=Game;" > ~/.local/share/applications/AssaultCubeReloaded.desktop
 chmod +x ~/.local/share/applications/AssaultCubeReloaded.desktop
 
 echo "Launch game by typing acr Or using desktop shortcut"
-
-echo launch game by typing "acr"
