@@ -36,17 +36,21 @@ cd build
 Arch=$(uname -m)
 if [ "$Arch" = x86_64 ];then
 	make config=release_linux-amd64-librw_gl3_glfw-oal
+	mkdir -pv ~/.games/re3
+	mv ../bin/linux-amd64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 elif [ "$Arch" = armv7l ];then
 	make config=release_linux-arm-librw_gl3_glfw-oal
+	mkdir -pv ~/.games/re3
+	mv ../bin/linux-arm-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 elif [ "$Arch" = aarch64 ];then
 	make config=release_linux-arm64-librw_gl3_glfw-oal
+	mkdir -pv ~/.games/re3
+	mv ../bin/linux-arm64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 else
 	echo "Cannot detect architecture. Tell devs, this isnt soppused to happen."
 	exit 1
 fi
 
-mkdir -pv ~/.games/re3
-mv ../bin/linux-amd64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 
 cd
 
@@ -60,6 +64,7 @@ cd ~/.games/re3
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/re3.png
 
+mkdir -p ~/.local/share/applications
 
 echo "[Desktop Entry]
 Type=Application
