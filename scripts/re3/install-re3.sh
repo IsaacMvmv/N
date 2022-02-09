@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -f /usr/bin/apt ];then
-	apt-get install git cmake premake libopenal unzip libopenal-dev libglew-dev libglfw3 libglfw3-dev libsndfile1 libsndfile1-dev libmpg123 libmpg123-dev 
+	apt-get install git cmake premake libsndfile1-dev libsndfile1 libopenal unzip libopenal-dev libglew-dev libglfw3 libglfw3-dev libsndfile1 libsndfile1-dev libmpg123 libmpg123-dev 
 
 	mkdir .tmp
 	cd .tmp
