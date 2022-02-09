@@ -29,12 +29,7 @@ cd \$OLDPWD" > doom3
 chmod +x doom3
 sudo mv doom3 /bin/doom3
 
-cd ~/.games/doom3
-mkdir base
-cd base
-wget https://github.com/IsaacMvmv/N/releases/download/doom/doom3.zip
-unzip doom3.zip
-rm doom3.zip
+cd
 
 rm -rf ~/.tmp
 
@@ -58,4 +53,4 @@ Categories=Game;" > ~/.local/share/applications/Doom3.desktop
 chmod +x ~/.local/share/applications/Doom3.desktop
 
 
-echo "Lunch game by typing doom3 ;D"
+echo "You have to have base dir of original doom3 placed in ~/.games/doom3/base  to play"
