@@ -103,8 +103,8 @@ rm -rf ~/.tmp
 
 cd ~/.games/doom12
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom12.png
-
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom1.png
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom2.png
 
 echo "[Desktop Entry]
 Type=Application
@@ -112,7 +112,7 @@ Version=1.0
 Name=doom1
 Comment=Doom1 and 2 Engine
 Exec=/bin/doom1
-Icon=/home/$USER/.games/doom1_2/doom12.jpeg
+Icon=/home/$USER/.games/doom1_2/doom1.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom1.desktop
 chmod +x ~/.local/share/applications/Doom1.desktop
@@ -123,7 +123,7 @@ Version=1.0
 Name=doom2
 Comment=Doom1 and 2 Engine
 Exec=/bin/doom2
-Icon=/home/$USER/.games/doom1_2/doom12.jpeg
+Icon=/home/$USER/.games/doom1_2/doom2.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.desktop
