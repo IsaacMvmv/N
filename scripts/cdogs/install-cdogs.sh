@@ -21,7 +21,7 @@ rm -rf ~/.games/cdogs-sdl
 mkdir ~/.games/cdogs-sdl
 cd ~/.games/cdogs-sdl
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/cdogs-sdl.png
+wget https://raw.githubusercontent.com/N0tN/N/main/icons/cdogs-sdl.png
 
 mv ~/.tmp/cdogs-sdl/res/* .
 
@@ -32,8 +32,7 @@ rm -rf ~/.tmp
 
 echo "#!/bin/sh
 cd $HOME/.games/cdogs-sdl/bin
-./cdogs-sdl
-cd \$OLDPWD" > cdogs-sdl
+./cdogs-sdl" > cdogs-sdl
 chmod +x cdogs-sdl
 sudo mv cdogs-sdl /bin/cdogs-sdl
 
