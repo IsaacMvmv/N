@@ -2,6 +2,8 @@
 
 Nameless pi gaming appstore
 
+The project started on  02/01/2022, It has tiny support right now (Some persons, but its going well by now)
+
 
 # Why do scripts compile instead of downloading a precompiled package:
 
@@ -9,7 +11,10 @@ Nameless pi gaming appstore
 
   If you compile, your resoult is a BIT faster (More performance) than prebuilt ones, making the game go at ~1-10fps more. And if we want pi to run doom3 nice, I will make it able to to it. :D
   
-  
+# TODO:
+  -More support
+  -GUI (Will be made in nodejs and python, more info in discord)
+  -And more
   
 # My repos:
 
@@ -18,12 +23,6 @@ https://github.com/IsaacMvmv/MC_java_rpi
 
 Experimental glibc error solution, one architecture by branch
 https://github.com/IsaacMvmv/Glibc_updated
-
-Assault cube reloaded (FPS game like counter strike for x64, armhf, arm64)
-https://github.com/IsaacMvmv/AL_gamefiles
-
-Awesome game (Mario bros with portal gun)
-https://github.com/IsaacMvmv/Mari0_rpi
 
 
 
