@@ -88,13 +88,11 @@ cd
 
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
-./crispy-doom -iwad doom1.wad
-cd \$OLDPWD' > doom1
+./crispy-doom -iwad doom1.wad' > doom1
 
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
-./crispy-doom -iwad doom2.wad
-cd \$OLDPWD' > doom2
+./crispy-doom -iwad doom2.wad' > doom2
 
 chmod +x doom1 doom2
 sudo rm /bin/doom1 /bin/doom2
@@ -130,4 +128,5 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.desktop
 
-echo Type "You have to have original doom1.wad and doom2.wad files placed in /home/$USER/.games/doom1_2. Then you will be able to play"
+echo "You have to have original doom1.wad and doom2.wad files placed in /home/$USER/.games/doom1_2. Then you will be able to play"
+echo "Open game by typing doom1, doom2 or clicking app shortcut"
