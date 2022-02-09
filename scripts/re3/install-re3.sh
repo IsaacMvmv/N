@@ -72,7 +72,7 @@ Version=1.0
 Name=Gta 3
 Comment=re3
 Exec=/bin/re3
-Icon=/home/$USER/.games/re3/re3.jpeg
+Icon=/home/$USER/.games/re3/re3.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/re3.desktop
 chmod +x ~/.local/share/applications/re3.desktop
