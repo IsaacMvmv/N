@@ -51,19 +51,11 @@ else
 	exit 1
 fi
 
-
-
-cd ~/.games/reVC
-wget https://github.com/IsaacMvmv/N/releases/download/reVC/reVC.zip
-unzip reVC.zip
-rm reVC.zip
-
 cd
 
 echo "#!/bin/sh
 cd $HOME/.games/reVC
-./reVC
-cd \$OLDPWD" > reVC
+./reVC" > reVC
 chmod +x reVC
 sudo mv reVC /bin
 
