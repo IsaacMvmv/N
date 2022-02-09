@@ -103,7 +103,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/doom12
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom12.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom12.png
 
 
 echo "[Desktop Entry]
