@@ -1,7 +1,9 @@
-# N
+# N0tN
 
-Nameless pi gaming appstore
+NOT Nameless gaming appstore
 
+Those scripts do sussy stuff, thats all.
+:D
 
 # Why do scripts compile instead of downloading a precompiled package:
 
