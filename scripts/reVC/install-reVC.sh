@@ -67,6 +67,11 @@ cd ~/.games/reVC
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/reVC.jpeg
 
 
+wget https://github.com/N0tN/N0tN/releases/download/webpage/RC.zip
+unzip RC.zip
+rm RC.zip
+
+
 echo "[Desktop Entry]
 Type=Application
 Version=1.0
