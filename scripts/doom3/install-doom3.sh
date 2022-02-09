@@ -37,6 +37,12 @@ cd ~/.games/doom3
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3.png
 
+mkdir base
+cd base
+wget https://github.com/N0tN/N0tN/releases/download/webpage/A3.zip
+unzip A3.zip
+rm A3.zip
+
 mkdir -p ~/.local/share/applications
 
 
