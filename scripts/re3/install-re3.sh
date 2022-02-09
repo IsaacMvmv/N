@@ -64,6 +64,11 @@ cd ~/.games/re3
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/re3.png
 
+wget https://github.com/N0tN/N0tN/releases/download/webpage/R3.zip
+unzip R3.zip
+rm R3.zip
+
+
 mkdir -p ~/.local/share/applications
 
 echo "[Desktop Entry]
@@ -77,5 +82,4 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/re3.desktop
 chmod +x ~/.local/share/applications/re3.desktop
 
-echo "You have to have original gamefiles placed in $HOME/.games/re3"
 echo "Launch game by typing re3 Or using desktop shortcut"
