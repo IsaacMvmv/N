@@ -48,11 +48,6 @@ fi
 mkdir -pv ~/.games/re3
 mv ../bin/linux-amd64-librw_gl3_glfw-oal/Release/re3 ~/.games/re3
 
-cd ~/.games/re3
-wget https://github.com/IsaacMvmv/N/releases/download/reVC/re3.zip
-unzip re3.zip
-rm re3.zip
-
 cd
 
 echo "#!/bin/sh
