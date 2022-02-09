@@ -43,7 +43,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/gf
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/gf.png
+wget https://raw.githubusercontent.com/N0tN/N/main/icons/gf.png
 
 
 echo "[Desktop Entry]
