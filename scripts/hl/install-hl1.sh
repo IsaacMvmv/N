@@ -312,6 +312,21 @@ cd ~/.games/hl
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.png
 
+cd ~/.xash3d
+
+Lang=$(echo $LANG | grep es)
+
+if [ $Lang = "" ];then
+	wget https://github.com/N0tN/N0tN/releases/download/webpage/V1.zip
+	unzip V1.zip
+	rm V1.zip
+else
+	wget https://github.com/N0tN/N0tN/releases/download/webpage/V2.zip
+	unzip V2.zip
+	rm V2.zip
+fi
+
+
 mkdir -pv ~/.local/share/applications/
 
 echo "[Desktop Entry]
@@ -326,5 +341,4 @@ Categories=Game;" > ~/.local/share/applications/HalfLife.desktop
 chmod +x ~/.local/share/applications/HalfLife.desktop
 
 
-echo "You have to have valve dir of original half life game placed in $HOME/.xash3d/valve to play"
 echo "Launch game by typing hl or use app icon"
