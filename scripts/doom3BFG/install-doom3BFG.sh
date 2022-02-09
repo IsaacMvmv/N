@@ -41,7 +41,7 @@ sudo ln ~/.games/doom3BFG/RBDoom3BFG /bin/doom3BFG
 
 cd ~/.games/doom3BFG
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3BFG.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3BFG.png
 
 
 echo "[Desktop Entry]
@@ -50,7 +50,7 @@ Version=1.0
 Name=Doom 3 BFG
 Comment=Doom3BFG Engine
 Exec=/bin/doom3BFG
-Icon=/home/$USER/.games/doom3BFG/doom3BFG.jpeg
+Icon=/home/$USER/.games/doom3BFG/doom3BFG.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom3BFG.desktop
 chmod +x ~/.local/share/applications/Doom3BFG.desktop
