@@ -57,14 +57,13 @@ cd
 
 echo "#!/bin/sh
 cd $HOME/.games/re3
-./re3
-cd \$OLDPWD" > re3
+./re3" > re3
 chmod +x re3
 sudo mv re3 /bin
 
 cd ~/.games/re3
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/reVC.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/re3.png
 
 
 echo "[Desktop Entry]
@@ -78,4 +77,5 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/re3.desktop
 chmod +x ~/.local/share/applications/re3.desktop
 
+echo "You have to have original gamefiles placed in $HOME/.games/re3"
 echo "Launch game by typing re3 Or using desktop shortcut"
