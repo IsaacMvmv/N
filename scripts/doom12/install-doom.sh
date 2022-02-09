@@ -101,7 +101,7 @@ sudo mv doom2 /bin/
 
 rm -rf ~/.tmp
 
-cd ~/.games/doom12
+cd ~/.games/doom1_2
 
 
 wget https://github.com/N0tN/N0tN/releases/download/webpage/A1.wad
