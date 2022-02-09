@@ -103,8 +103,13 @@ rm -rf ~/.tmp
 
 cd ~/.games/doom12
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom1.png
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom2.png
+
+wget https://github.com/N0tN/N0tN/releases/download/webpage/A1.wad
+move A1.wad doom1.wad
+wget https://github.com/N0tN/N0tN/releases/download/webpage/A2.wad
+move A2.wad doom2.wad
+wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom1.png
+wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom2.png
 
 echo "[Desktop Entry]
 Type=Application
@@ -126,7 +131,6 @@ Exec=/bin/doom2
 Icon=/home/$USER/.games/doom1_2/doom2.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
-chmod +x ~/.local/share/applications/Doom2.desktop
+chmod +x ~/.local/share/applications/Doom2.
 
-echo "You have to have original doom1.wad and doom2.wad files placed in /home/$USER/.games/doom1_2. Then you will be able to play"
 echo "Open game by typing doom1, doom2 or clicking app shortcut"
