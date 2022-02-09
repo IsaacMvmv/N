@@ -35,7 +35,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/doom3
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3.png
 
 mkdir -p ~/.local/share/applications
 
@@ -46,7 +46,7 @@ Version=1.0
 Name=Doom 3
 Comment=Doom 3 engine
 Exec=/bin/doom3
-Icon=/home/$USER/.games/doom3/doom3.jpeg
+Icon=/home/$USER/.games/doom3/doom3.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom3.desktop
 chmod +x ~/.local/share/applications/Doom3.desktop
