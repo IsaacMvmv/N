@@ -84,9 +84,7 @@ mkdir -pv ~/.games/doom1_2
 
 mv ~/.tmp/crispy-doom/res/bin/crispy-doom ~/.games/doom1_2
 
-cd ~/.games/doom1_2
-wget https://github.com/IsaacMvmv/N/releases/download/doom/doom1.wad
-wget https://github.com/IsaacMvmv/N/releases/download/doom/doom2.wad
+cd
 
 echo '#!/bin/sh
 cd /home/$USER/.games/doom1_2/
@@ -132,4 +130,4 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.desktop
 
-echo Type "doom1, doom2 to run each game"
+echo Type "You have to have original doom1.wad and doom2.wad files placed in /home/$USER/.games/doom1_2. Then you will be able to play"
