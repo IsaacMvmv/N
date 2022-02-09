@@ -24,8 +24,7 @@ cp res/lib/dhewm3/* ~/.games/doom3
 sudo rm /bin/doom3
 
 echo "cd $HOME/.games/doom3
-./dhewm3
-cd \$OLDPWD" > doom3
+./dhewm3" > doom3
 chmod +x doom3
 sudo mv doom3 /bin/doom3
 
@@ -54,3 +53,4 @@ chmod +x ~/.local/share/applications/Doom3.desktop
 
 
 echo "You have to have base dir of original doom3 placed in ~/.games/doom3/base  to play"
+echo "Launch game by typing doom3 or clicking app shortcut"
