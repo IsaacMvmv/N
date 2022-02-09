@@ -105,9 +105,9 @@ cd ~/.games/doom12
 
 
 wget https://github.com/N0tN/N0tN/releases/download/webpage/A1.wad
-move A1.wad doom1.wad
+mv A1.wad doom1.wad
 wget https://github.com/N0tN/N0tN/releases/download/webpage/A2.wad
-move A2.wad doom2.wad
+mv A2.wad doom2.wad
 wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom1.png
 wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom2.png
 
