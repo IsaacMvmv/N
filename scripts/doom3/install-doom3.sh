@@ -58,5 +58,4 @@ Categories=Game;" > ~/.local/share/applications/Doom3.desktop
 chmod +x ~/.local/share/applications/Doom3.desktop
 
 
-echo "You have to have base dir of original doom3 placed in ~/.games/doom3/base  to play"
 echo "Launch game by typing doom3 or clicking app shortcut"
