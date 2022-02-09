@@ -22,8 +22,7 @@ mkdir -pv ~/.games
 mv ~/.tmp/acr ~/.games/acr
 echo '#!/bin/sh
 cd /home/$USER/.games/acr
-bash client.sh
-cd $OLDPWD' > acr
+bash client.sh' > acr
 chmod +x acr
 sudo mv acr /bin/acr
 
@@ -31,7 +30,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/acr
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.png
+wget https://raw.githubusercontent.com/N0tN/N/main/icons/acr.png
 
 mkdir -p ~/.local/share/applications
 
