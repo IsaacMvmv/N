@@ -43,6 +43,10 @@ cd ~/.games/doom3BFG
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3BFG.png
 
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu" -O base.rar && rm -rf /tmp/cookies.txt
+unrar x base.rar
+rm base.rar
+
 
 echo "[Desktop Entry]
 Type=Application
@@ -55,5 +59,4 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom3BFG.desktop
 chmod +x ~/.local/share/applications/Doom3BFG.desktop
 
-echo "You have to have base dir of original game placed in ~/.games/doom3BFG/base to play"
 echo "Launch game by typing doom3BFG or clicking app shortcut"
