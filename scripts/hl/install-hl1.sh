@@ -310,7 +310,7 @@ sudo mv xash3d /bin/hl
 
 cd ~/.games/hl
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.png
 
 mkdir -pv ~/.local/share/applications/
 
@@ -320,7 +320,7 @@ Version=1.0
 Name=Half life
 Comment=Xash3d engine and hlsdk .so files
 Exec=/bin/hl
-Icon=/home/$USER/.games/hl/hl.jpeg
+Icon=/home/$USER/.games/hl/hl.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/HalfLife.desktop
 chmod +x ~/.local/share/applications/HalfLife.desktop
