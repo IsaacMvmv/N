@@ -31,7 +31,7 @@ rm -rf ~/.tmp
 
 cd ~/.games/acr
 
-wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.jpeg
+wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/acr.png
 
 mkdir -p ~/.local/share/applications
 
