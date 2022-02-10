@@ -13,7 +13,9 @@ The project started on  02/01/2022, It has tiny support right now (Some persons,
   
 # TODO:
   -More support
+  
   -GUI (Will be made in nodejs and python, more info in discord)
+  
   -And more
   
 # My repos:
