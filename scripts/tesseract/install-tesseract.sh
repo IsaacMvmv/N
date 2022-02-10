@@ -7,7 +7,7 @@ elif [ -f /usr/bin/pacman ];then
 fi
 
 
-rm -rf ~/.tmp ~/.games/
+rm -rf ~/.tmp ~/.games/tesseract
 mkdir ~/.tmp
 cd ~/.tmp
 
