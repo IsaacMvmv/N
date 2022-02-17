@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [ -f /usr/bin/apt ];then
-	sudo apt install -y 
+	sudo apt install -y unzip wget git make gcc g++ libsdl2-2.0-0 libsdl2-dev libsdl2-mixer-dev libsdl2-image-dev 
 elif [ -f /usr/bin/pacman ];then
-	sudo pacman -S --needed 
+	sudo pacman -S --needed unzip wget git make gcc sdl2 sdl2_mixer sdl2_image
 fi
 
 
