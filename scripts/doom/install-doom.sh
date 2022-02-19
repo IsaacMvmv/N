@@ -52,14 +52,9 @@ rm -rf ~/.tmp
 cd ~/.games/doom
 
 
-wget https://github.com/N0tN/N0tN/releases/download/webpage/A1.wad
-mv A1.wad doom1.wad
-wget https://github.com/N0tN/N0tN/releases/download/webpage/A2.wad
-mv A2.wad doom2.wad
 wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom1.png
 
 mkdir -p ~/.config/gzdoom
-mv *.wad ~/.config/gzdoom
 
 echo "[Desktop Entry]
 Type=Application
@@ -74,5 +69,5 @@ chmod +x ~/.local/share/applications/Doom.desktop
 
 
 echo "Open game by typing doom or clicking app shortcut.
-Install all wads, pk3, etc... to $HOME/.config/gzdoom
+Place all wads, pk3, etc... to $HOME/.config/gzdoom
 TO PLAY MULTIPLAYER, a host have to do: \"doom -HOST playernumber\", and the client have to do: \"doom -JOIN hostip\""
