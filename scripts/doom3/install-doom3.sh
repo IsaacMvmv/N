@@ -10,7 +10,7 @@ elif [ -f /usr/bin/pacman ];then
   sudo pacman -S --needed sdl2_image sdl2_ttf sdl2_mixer fontconfig qt5-base automake mercurial libtool freeimage openal pango libsndfile libtiff xorg-xrandr libxinerama libxss freeglut libjpeg-turbo libogg libvorbis cmake
 fi
 
-rm -rf ~/.tmp ~/.games/doom3 rm -rf ~/.local/share/dhewm3/
+rm -rf ~/.tmp ~/.games/doom3 ~/.local/share/dhewm3/
 mkdir ~/.tmp
 cd ~/.tmp
 
