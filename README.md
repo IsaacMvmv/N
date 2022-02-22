@@ -1,6 +1,8 @@
 # N
 
-Nameless pi gaming appstore
+Nameless universal gamestore
+
+This gamestore is compatible with all linux devices, the only requirement is to use apt or pacman. Enjoy!
 
 The project started on  02/01/2022, It has tiny support right now (Some persons, but its going well by now)
 
