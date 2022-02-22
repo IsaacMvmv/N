@@ -19,20 +19,21 @@ cd ~/.tmp
 
 git clone https://github.com/Tuxemon/Tuxemon.git
 cd Tuxemon
-sudo pip install -U -r requirements.txt
+python -m pip install -U -r requirements.txt
 
 
-mkdir -pv ~/.games/$name
-
+mv ~/.tmp/Tuxemon ~/.games/tuxemon
 
 sudo rm /bin/$name
+
+cd
 
 echo "cd $HOME/.games/$name
 python run_tuxemon.py" > $name
 chmod +x $name
 sudo mv $name /bin/$name
 
-cd
+
 
 rm -rf ~/.tmp
 
