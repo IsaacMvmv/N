@@ -43,9 +43,13 @@ cd ~/.games/doom3BFG
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/doom3BFG.png
 
+mkdir base
+cd base
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1GHQEB17QLojsWN3v5DDlFmZLMknJgnFu" -O base.rar && rm -rf /tmp/cookies.txt
 unrar x base.rar
 rm base.rar
+
+cd
 
 
 echo "[Desktop Entry]
