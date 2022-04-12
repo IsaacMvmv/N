@@ -43,11 +43,6 @@ rm -rf ~/.tmp
 
 cd ~/.games/doom1_2
 
-
-wget https://github.com/N0tN/N0tN/releases/download/webpage/A1.wad
-mv A1.wad doom1.wad
-wget https://github.com/N0tN/N0tN/releases/download/webpage/A2.wad
-mv A2.wad doom2.wad
 wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom1.png
 wget https://raw.githubusercontent.com/N0tN/N/main/icons/doom2.png
 
@@ -73,4 +68,4 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.
 
-echo "Open game by typing doom1, doom2 or clicking app shortcut"
+echo "You need to provide doom 1 & 2 wads in /home/$USER/.games/doom1_2 . they have to be called doom1.wad and doom2.wad"
