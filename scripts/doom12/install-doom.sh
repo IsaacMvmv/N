@@ -5,6 +5,10 @@ if [ -f /usr/bin/apt ];then
 	sudo apt install -y g++ make cmake libsdl1.2-dev, libsdl-mixer1.2-dev and libsdl-net1.2-dev git gcc
 elif [ -f /usr/bin/pacman ];then
 	sudo pacman -S --needed libpng sdl_mixer sdl_net cmake git gcc make
+	wget https://github.com/IsaacMvmv/N/releases/download/freepats-legacy/freepats-legacy-20060219-1-any.pkg.tar.xz
+	sudo pacman -U freepats-legacy-20060219-1-any.pkg.tar.xz
+	rm freepats-legacy-20060219-1-any.pkg.tar.xz
+	sudo cp /usr/share/freepats/timidity-freepats.cfg /etc/timidity++/freepats.cfg
 fi
 
 rm -rf ~/.tmp ~/.games/doom1_2
