@@ -19,7 +19,7 @@ if [ -f /usr/bin/apt ];then
 	rm -rf .tmp
 
 elif [ -f /usr/bin/pacman ];then
-	sudo pacman -S --needed git premake cmake openal glew libsndfile mpg123 glfw-x11
+	sudo pacman -S --needed git premake cmake openal glew libsndfile mpg123 glfw-x11 unzip
 fi
 
 
