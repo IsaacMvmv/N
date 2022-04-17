@@ -1,57 +1,27 @@
 #!/bin/sh
 
-
-sudo rm -rf ~/.tmp ~/.xash3d ~/xash3d /bin/xash3d /usr/share/xash3d/ ~/.local/share/applications/HalfLife.desktop
-
-
+rm -rf ~/.tmp
 mkdir ~/.tmp
 cd ~/.tmp
 
 
-
 if [ -f /usr/bin/apt ];then
-	if [ $(uname -m) == "x86_64" ]; then
-  COMPILERS="gcc-multilib g++-multilib"
-	else
-		COMPILERS="gcc g++"
-	fi
-	sudo apt install -y python libsdl2-2.0-0 libsdl2-dev $COMPILERS libfreetype6-dev
+	sudo apt install -y python libsdl2-2.0-0 libsdl2-dev gcc g++ libfreetype6-dev
 elif [ -f /usr/bin/pacman ];then
-	if [ $(uname -m) == "x86_64" ]; then
-  COMPILERS="gcc lib32-gcc-libs"
-	else
-		COMPILERS="gcc"
-	fi
-	sudo pacman -S --needed sdl2 $COMPILERS fontconfig python freetype2
-else
-	echo "No se ha detectado APT o PACMAN. Tendrás que instalar por tu cuenta :D"
+	sudo pacman -S --needed sdl2 gcc fontconfig python freetype2
 fi
 
+if [ $(uname -m) == "x86_64" ]; then
+  ARGS="--64bits"
+fi
 
 
 
 git clone https://github.com/FWGS/hlsdk-xash3d
 
-
-
-
-ARGS="--enable-goldsrc-support \
---build-type=release \
---enable-voicemgr"
-
-if [ $(uname -m) == "x86_64" ]; then
-  ARGS+=" --libdir=/usr/lib32"
-else
-  ARGS+=" --libdir=/usr/lib"
-fi
-
-
-
 cd hlsdk-xash3d
 
 git submodule update --init --recursive
-
-
 
 
 echo '//
@@ -179,7 +149,7 @@ const GID_t k_TxnIDUnknown = 0;
 #define  k_TxnIDUnknown 0;
 #endif
 
-// this is baked into client messages and interfaces as an int, 
+// this is baked into client messages and interfaces as an int,
 // make sure we never break this.
 typedef uint32 PackageId_t;
 #ifdef __cplusplus
@@ -190,7 +160,7 @@ const PackageId_t k_uPackageIdInvalid = 0xFFFFFFFF;
 #define k_uPackageIdInvalid 0xFFFFFFFF;
 #endif
 
-// this is baked into client messages and interfaces as an int, 
+// this is baked into client messages and interfaces as an int,
 // make sure we never break this.
 typedef uint32 AppId_t;
 #ifdef __cplusplus
@@ -214,7 +184,7 @@ const PhysicalItemId_t k_uPhysicalItemIdInvalid = 0x0;
 #endif
 
 
-// this is baked into client messages and interfaces as an int, 
+// this is baked into client messages and interfaces as an int,
 // make sure we never break this.  AppIds and DepotIDs also presently
 // share the same namespace, but since we d like to change that in the future
 // I ve defined it seperately here.
@@ -258,15 +228,15 @@ const PartnerId_t k_uPartnerIdInvalid = 0;
 
 
 
-./waf configure ${ARGS}
+./waf configure --enable-lto --enable-goldsrc-support --build-type=release --enable-voicemgr $ARGS
+
 ./waf build
 mkdir res
-./waf install --destdir=res
+./waf install --strip --destdir=res
 
 mv res ../hlsdk
 
 cd ..
-
 
 
 git clone https://github.com/FWGS/xash3d-fwgs
@@ -275,7 +245,7 @@ cd xash3d-fwgs
 
 git submodule update --init --recursive
 
-./waf configure -T release --enable-lto --enable-poly-opt
+./waf configure --build-type=release --enable-lto --enable-poly-opt $ARGS
 
 ./waf build
 
@@ -285,7 +255,7 @@ mv res ../engine
 
 cd ..
 
-rm -rf hlsdk-xash3d xash3d-fwgs
+rm -rf hlsdk-xash3d xash3d-fwgs ~/.xash3d
 
 mkdir ~/.xash3d
 mv * ~/.xash3d
@@ -293,15 +263,16 @@ mv ~/.xash3d/hlsdk/valve ~/.xash3d/valve
 rm -rf ~/.xash3d/hlsdk
 mkdir ~/.games
 sudo mv ~/.xash3d/engine/ ~/.games/hl
-rm -rf .tmp
+
+
+cd
+rm -rf ~/.tmp
 
 
 
 echo '#!/bin/sh
-
 export LD_LIBRARY_PATH=/home/$USER/.games/hl:$LD_LIBRARY_PATH
 export XASH3D_BASEDIR="$HOME/.xash3d"
-
 /home/$USER/.games/hl/xash3d "$@"' > xash3d
 
 chmod +x xash3d
@@ -326,5 +297,4 @@ Categories=Game;" > ~/.local/share/applications/HalfLife.desktop
 chmod +x ~/.local/share/applications/HalfLife.desktop
 
 
-echo "You have to have valve dir of original half life game placed in $HOME/.xash3d/valve to play"
-echo "Launch game by typing hl or use app icon"
+echo "Copy original valve folder into $HOME/.xash3d/valve and launch game by typing hl or use app icon"
