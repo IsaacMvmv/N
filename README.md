@@ -43,3 +43,9 @@ Another MC launcher: https://github.com/gl91306/launcherpi
 # ALSO
 
 If you want to contribute, join https://discord.gg/7qRNPPwf5n
+
+
+
+
+All scripts have been made by @isaacmv#0656 for https://github.com/IsaacMvmv/N, meaning that if you find another store with the same scripts, you know who is first.
+If you want to include N in your repo, store, gamestore, whatever, you can tell me, in the discord server or dm (I prefer discord server, faster and easier)
