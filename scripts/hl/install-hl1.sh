@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set -e #exit the script immediately if any commands fail
+
+
 rm -rf ~/.tmp
 mkdir ~/.tmp
 cd ~/.tmp
@@ -8,7 +11,7 @@ cd ~/.tmp
 if [ -f /usr/bin/apt ];then
 	sudo apt install -y python libsdl2-2.0-0 libsdl2-dev gcc g++ libfreetype6-dev
 elif [ -f /usr/bin/pacman ];then
-	sudo pacman -S --needed sdl2 gcc fontconfig python freetype2
+	sudo pacman -S --needed sdl2 gcc fontconfig python freetype2 git unzip pkgconf
 fi
 
 if [ $(uname -m) == "x86_64" ]; then
