@@ -260,11 +260,11 @@ cd ..
 
 rm -rf hlsdk-xash3d xash3d-fwgs ~/.xash3d
 
-mkdir ~/.xash3d
+mkdir -p ~/.xash3d
 mv * ~/.xash3d
 mv ~/.xash3d/hlsdk/valve ~/.xash3d/valve
 rm -rf ~/.xash3d/hlsdk
-mkdir ~/.games
+mkdir -p ~/.games
 sudo mv ~/.xash3d/engine/ ~/.games/hl
 
 
