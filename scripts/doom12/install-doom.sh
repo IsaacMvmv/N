@@ -1,14 +1,11 @@
 #!/bin/sh
 
+set -e
 
 if [ -f /usr/bin/apt ];then
 	sudo apt install -y g++ make cmake libsdl1.2-dev libsdl-mixer1.2-dev libsdl-net1.2-dev git gcc libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-net-dev libpcre3-dev libmad0-dev libfluidsynth-dev libdumb1-dev libvorbis-dev libportmidi-dev libasound2-dev 
 elif [ -f /usr/bin/pacman ];then
 	sudo pacman -S --needed libpng sdl_mixer sdl_net cmake git gcc make
-	wget https://github.com/IsaacMvmv/N/releases/download/freepats-legacy/freepats-legacy-20060219-1-any.pkg.tar.xz
-	sudo pacman -U freepats-legacy-20060219-1-any.pkg.tar.xz
-	rm freepats-legacy-20060219-1-any.pkg.tar.xz
-	sudo cp /usr/share/freepats/timidity-freepats.cfg /etc/timidity++/freepats.cfg
 fi
 
 rm -rf ~/.tmp ~/.games/doom1_2
@@ -72,4 +69,5 @@ Terminal=false
 Categories=Game;" > ~/.local/share/applications/Doom2.desktop
 chmod +x ~/.local/share/applications/Doom2.
 
-echo "You need to provide doom 1 & 2 wads in /home/$USER/.games/doom1_2 . they have to be called doom1.wad and doom2.wad"
+echo "You need to provide doom 1 & 2 wads in /home/$USER/.games/doom1_2 . they have to be called doom1.wad and doom2.wad
+To make music work, you have to select opl2 in audio settings"
