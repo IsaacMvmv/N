@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo rm -rf /bin/hl ~/.xash3d ~/.games/hl ~/.local/share/applications/HalfLife.desktop
+sudo rm -rf /bin/hl /bin/opfor /bin/bshift ~/.xash3d ~/.games/hl ~/.local/share/applications/HalfLife.desktop ~/.local/share/applications/Bshift.desktop ~/.local/share/applications/Opposing_force.desktop
