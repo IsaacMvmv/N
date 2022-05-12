@@ -734,28 +734,6 @@ wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/hl.png
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/bshift.png
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/opfor.png
 
-cd ~/.xash3d
-
-Lang=$(echo $LANG | grep es)
-
-if [ $Lang = "" ];then
-	wget https://github.com/N0tN/N0tN/releases/download/webpage/V1.zip
-	unzip V1.zip
-	rm V1.zip
-else
-	wget https://github.com/N0tN/N0tN/releases/download/webpage/V2.zip
-	unzip V2.zip
-	rm V2.zip
-fi
-
-wget https://github.com/N0tN/N0tN/releases/download/webpage/V3.zip
-unzip V3.zip
-rm V3.zip
-
-wget https://github.com/N0tN/N0tN/releases/download/webpage/V4.zip
-unzip V4.zip
-rm V4.zip
-
 mkdir -pv ~/.local/share/applications/
 
 echo "[Desktop Entry]
