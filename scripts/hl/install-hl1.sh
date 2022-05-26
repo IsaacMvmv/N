@@ -772,7 +772,7 @@ chmod +x ~/.local/share/applications/HalfLife.desktop
 echo "[Desktop Entry]
 Type=Application
 Version=1.0
-Name=Half life
+Name=Blue Shift
 Comment=Xash3d engine and hlsdk .so files
 Exec=/bin/bshift
 Icon=/home/$USER/.games/hl/bshift.png
