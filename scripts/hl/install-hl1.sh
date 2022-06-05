@@ -72,7 +72,7 @@ cd ..
 
 rm -rf hl bshift opfor xash3d-fwgs ~/.xash3d
 
-mkdir ~/.xash3d
+mkdir -p ~/.xash3d ~/.games
 mv * ~/.xash3d
 mv ~/.xash3d/hlsdk/valve ~/.xash3d/valve
 mv ~/.xash3d/bshiftsdk/bshift ~/.xash3d/bshift
