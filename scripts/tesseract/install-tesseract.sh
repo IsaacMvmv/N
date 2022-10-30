@@ -11,11 +11,8 @@ rm -rf ~/.tmp ~/.games/tesseract
 mkdir ~/.tmp
 cd ~/.tmp
 
-
-wget https://github.com/IsaacMvmv/N/releases/download/tesseract/tesseract.zip
-unzip tesseract.zip
-rm tesseract.zip
-cd src
+git clone --depth=1 --recursive https://github.com/tesseract-ocr/tesseract
+cd tesseract/src
 make -j$(nproc) install
 cd ..
 rm -rf src
