@@ -66,10 +66,10 @@ mv cs*.so cstrike/dlls/cs.so
 
 rm -rf ~/.tmp
 
-echo "#!/bin/sh
+echo '#!/bin/sh
 export LD_LIBRARY_PATH=/home/$USER/.games/cstrike:$LD_LIBRARY_PATH
 cd /home/$USER/.games/cstrike
-/home/$USER/.games/cstrike/xash3d -game cstrike '$@'" > cstrikescript
+/home/$USER/.games/cstrike/xash3d -game cstrike $@' > cstrikescript
 
 chmod +x cstrikescript
 sudo mv cstrikescript /bin/cstrike
