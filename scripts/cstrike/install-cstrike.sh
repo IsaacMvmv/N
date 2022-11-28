@@ -9,10 +9,10 @@ if [ $(uname -m) == "x86_64" ]; then
 elif [ $(uname -m) == "aarch64" ]; then
 	ARGS="-DXASH_64BIT=1"
 	ARCH="arm64"
-	Clname="client_arm64.so"
+	Clname="client64.so"
 elif [ $(uname -m) == "armv7h" ]; then
 	ARCH="armhf"
-	Clname="client_armv7h.so"
+	Clname="client.so"
 fi
 
 
@@ -68,10 +68,10 @@ mv cs*.so cstrike/dlls/cs.so
 
 rm -rf ~/.tmp
 
-echo "#!/bin/sh
+echo '#!/bin/sh
 export LD_LIBRARY_PATH=/home/$USER/.games/cstrike:$LD_LIBRARY_PATH
 cd /home/$USER/.games/cstrike
-/home/$USER/.games/cstrike/xash3d -game cstrike '$@'" > cstrikescript
+/home/$USER/.games/cstrike/xash3d -game cstrike $@' > cstrikescript
 
 chmod +x cstrikescript
 sudo mv cstrikescript /bin/cstrike
