@@ -82,7 +82,7 @@ Type=Application
 Version=1.0
 Name=Counter Strike
 Exec=/bin/cstrike
-Icon=/home/$USER/.games/hl/hl.png
+Icon=/home/$USER/.games/cstrike/cstrike.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Cstrike.desktop
 chmod +x ~/.local/share/applications/Cstrike.desktop
