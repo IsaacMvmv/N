@@ -54,9 +54,7 @@ cd $HOME/.games/cstrike
 
 wget https://raw.githubusercontent.com/IsaacMvmv/N/main/icons/cstrike.png
 
-wget https://github.com/N0tN/N0tN/releases/download/webpage/C1.zip
-unzip C1.zip
-rm C1.zip
+mkdir -p cstrike/cl_dlls cstrike/dll
 mv libxashmenu* cstrike/cl_dlls
 
 wget https://github.com/IsaacMvmv/cstrike_linux/releases/download/Libs/cslibs_${ARCH}.zip
@@ -82,9 +80,10 @@ Type=Application
 Version=1.0
 Name=Counter Strike
 Exec=/bin/cstrike
-Icon=/home/$USER/.games/hl/hl.png
+Icon=/home/$USER/.games/cstrike/cstrike.png
 Terminal=false
 Categories=Game;" > ~/.local/share/applications/Cstrike.desktop
 chmod +x ~/.local/share/applications/Cstrike.desktop
 
+echo "You need to place the cstrike & valve dir in /home/$USER/.games/cstrike"
 echo "Launch game by typing cstrike or use app icon"
