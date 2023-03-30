@@ -35,12 +35,14 @@ git clone --recursive --depth=1 https://github.com/FWGS/xash3d xash3d
 
 cd xash3d
 
+git clone --depth=1 https://github.com/FWGS/vgui-dev hlsdk/
+
 mkdir build
 cd build
 
 mkdir res
 
-cmake .. -DCMAKE_INSTALL_PREFIX=res $ARGS
+cmake .. -DCMAKE_INSTALL_PREFIX=res -DHL_SDK_DIR=../hlsdk -DXASH_SDL=yes -DXASH_VGUI=yes $ARGS
 
 make -j$(nproc) install
 
