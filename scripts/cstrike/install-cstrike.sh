@@ -13,6 +13,9 @@ elif [ $(uname -m) == "aarch64" ]; then
 elif [ $(uname -m) == "armv7h" ]; then
 	ARCH="armhf"
 	Clname="client.so"
+elif [ $(uname -m) == "i686" ]; then
+	ARCH="i686"
+	Clname="client.so"
 fi
 
 
