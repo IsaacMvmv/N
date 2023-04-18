@@ -1,51 +1,32 @@
-# N
+# Nameless Universal Gamestore (N)
 
-Nameless universal gamestore
+N is a gamestore that is fully compatible with all Linux devices, with the only requirement being the use of apt or pacman. Started on 02/01/2022, N currently has a small but growing support team.
 
-This gamestore is compatible with all linux devices, the only requirement is to use apt or pacman. Enjoy!
+## Why do scripts compile instead of downloading a precompiled package?
 
-The project started on  02/01/2022, It has tiny support right now (Some persons, but its going well by now)
+Because Im lazy? No (But I am, no doubt)
 
+If you compile, your result is a BIT faster (More performance) than prebuilt ones, making the game go at ~1-10fps more. And if we want pi to run Doom 3 nicely, I will make it able to do it. :D
 
-# Why do scripts compile instead of downloading a precompiled package:
+## TODO:
 
-  Because Im lazy? No (But I am, no doubt)
+- More support
+- GUI (Will be made in Node.js and Python, more info in Discord)
+- And more
 
-  If you compile, your resoult is a BIT faster (More performance) than prebuilt ones, making the game go at ~1-10fps more. And if we want pi to run doom3 nice, I will make it able to to it. :D
-  
-# TODO:
-  -More support
-  
-  -GUI (Will be made in nodejs and python, more info in discord)
-  
-  -And more
-  
-# My repos:
+## My repos:
 
-Old piapps's MC launcher
-https://github.com/IsaacMvmv/MC_java_rpi
+- Old Piapps's MC launcher: https://github.com/IsaacMvmv/MC_java_rpi
+- Experimental glibc error solution, one architecture by branch: https://github.com/IsaacMvmv/Glibc_updated
 
-Experimental glibc error solution, one architecture by branch
-https://github.com/IsaacMvmv/Glibc_updated
+## Other repos:
 
+- Lunar client: https://github.com/gl91306/lunar
+- Deltarune for Pi (I think only armhf): https://github.com/gl91306/deltarune_ch_1_2
+- Another MC launcher: https://github.com/gl91306/launcherpi
 
+## ALSO
 
-# Another repos: 
+If you want to contribute, join our [Discord server](https://discord.gg/7qRNPPwf5n).
 
-Lunar client: https://github.com/gl91306/lunar
-
-Deltarune for pi (I think only armhf): https://github.com/gl91306/deltarune_ch_1_2
-
-Another MC launcher: https://github.com/gl91306/launcherpi
-
-
-
-# ALSO
-
-If you want to contribute, join https://discord.gg/7qRNPPwf5n
-
-
-
-
-All scripts have been made by @isaacmv#0656 for https://github.com/IsaacMvmv/N, meaning that if you find another store with the same scripts, you know who is first.
-If you want to include N in your repo, store, gamestore, whatever, you can tell me, in the discord server or dm (I prefer discord server, faster and easier)
+All scripts have been made by @isaacmv#0656 for [N](https://github.com/IsaacMvmv/N), meaning that if you find another store with the same scripts, you know who was first. If you want to include N in your repo, store, gamestore, or any other project, feel free to contact us on our Discord server.
